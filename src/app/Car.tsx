@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import { RootState } from './store';
 
 const Car: React.FC = () => {
-  const { scene } = useGLTF('./car0.glb');
+  const { scene } = useGLTF('/car0.glb');
   const currentMaterialProps = useSelector((state: RootState) => state.carPaint.materials[state.carPaint.currentMaterialIndex]);
 
   useLayoutEffect(() => {

@@ -6,7 +6,7 @@ import { useGLTF, OrbitControls, Environment } from '@react-three/drei';
 import MyEnvironment from '../Environment';
 
 const Dress: React.FC = () => {
-  const { scene } = useGLTF('./car0.glb');
+  const { scene } = useGLTF('/dress.glb');
   const controlsRef = useRef(null);
    // Convert 180 degrees to radians
    const rotationY = Math.PI; // 180 degrees
@@ -16,7 +16,7 @@ const Dress: React.FC = () => {
       <Canvas style={{ width: '100vw', height: '100vh' }} shadows>
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 5, 5]} castShadow />
-        <primitive object={scene} position={[0, -1, 0]} rotation={[0, rotationY, 0]} />
+        <primitive object={scene} position={[0, 0, 0]} rotation={[0, rotationY, 0]} />
         <OrbitControls
           ref={controlsRef}
           enableDamping
