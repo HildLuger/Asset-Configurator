@@ -7,8 +7,8 @@ import MyEnvironment from '../Environment';
 import store from '../store';
 
 
-const Ring: React.FC = () => {
-  const { scene } = useGLTF('./dress.glb');
+const Dress: React.FC = () => {
+  const { scene } = useGLTF('/dress.glb');
   const controlsRef = useRef(null);
 
      // Convert 180 degrees to radians
@@ -35,4 +35,4 @@ const Ring: React.FC = () => {
   );
 };
 
-export default Ring;
+export default Dress;
