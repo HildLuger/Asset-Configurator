@@ -1,15 +1,11 @@
-//  Meta.tsx
-
+// Meta.tsx
 import Head from 'next/head';
 
-// Define an interface for your component's props
-interface MetaProps {
-  title: string;
-  keywords: string;
-  description: string;
-}
-
-const Meta: React.FC<MetaProps> = ({ title, keywords, description }) => {
+const Meta = ({ 
+  title = 'Your Site Title', 
+  keywords = 'web development, programming', 
+  description = 'Your description here'
+}) => {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,11 +18,4 @@ const Meta: React.FC<MetaProps> = ({ title, keywords, description }) => {
   );
 };
 
-Meta.defaultProps = {
-  title: 'Asset Configurator',
-  keywords: 'web development, programming',
-  description: 'Hild Luger Portfolio',
-};
-
 export default Meta;
-

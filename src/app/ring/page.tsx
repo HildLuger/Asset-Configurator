@@ -6,7 +6,7 @@ import { useGLTF, OrbitControls, Environment } from '@react-three/drei';
 import MyEnvironment from '../Environment';
 
 const Ring: React.FC = () => {
-  const { scene } = useGLTF('/car0.glb');
+  const { scene } = useGLTF('./car0.glb');
   const controlsRef = useRef(null);
 
      // Convert 180 degrees to radians
