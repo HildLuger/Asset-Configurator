@@ -8,7 +8,7 @@ import store from '../store';
 
 
 const Ring: React.FC = () => {
-  const { scene } = useGLTF('./ring.glb');
+  const { scene } = useGLTF('/ring.glb');
   const controlsRef = useRef(null);
 
      // Convert 180 degrees to radians
