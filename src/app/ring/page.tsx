@@ -4,6 +4,8 @@ import React, { useRef } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Environment } from '@react-three/drei';
 import MyEnvironment from '../Environment';
+import store from '../store';
+
 
 const Ring: React.FC = () => {
   const { scene } = useGLTF('./ring.glb');
@@ -15,7 +17,7 @@ const Ring: React.FC = () => {
   return (
     <main>
       <Canvas style={{ width: '100vw', height: '100vh' }} shadows>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={1} />
         <directionalLight position={[0, 5, 5]} castShadow />
         <primitive object={scene} position={[0, 0, 0]} rotation={[0, rotationY, 0]} />
         <OrbitControls

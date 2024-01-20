@@ -42,6 +42,7 @@ const MyEnvironment = () => {
           </Sphere>
           <directionalLight position={[1, 2, 3]} intensity={3} />
           <directionalLight position={[-1, 2, -3]} intensity={3} />
+
         </>
       ) : (
         <>
