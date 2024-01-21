@@ -39,4 +39,7 @@ const Car: React.FC = () => {
   return <primitive object={scene} position={[0, -1, 0.2]} rotation={[0, Math.PI, 0]} />;
 };
 
+
+useGLTF.preload('/car0.glb'); // Preload the model for better performance
+
 export default Car;
