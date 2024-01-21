@@ -5,14 +5,14 @@ import * as THREE from 'three';
 
 const Dress = () => {
   const { scene } = useGLTF('/dress.glb');
-  const rotationY = Math.PI; // Rotate 180 degrees in radians
+  const rotationZ = Math.PI; // Rotate 180 degrees in radians
 
   return (
     <primitive 
       object={scene} 
       scale={[3,3,3]}
       position={[0, -2.5, 0]} 
-      rotation={[0, rotationY, 0]} 
+      rotation={[0, rotationZ, 0]} 
     />
   );
 };
