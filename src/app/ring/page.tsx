@@ -22,7 +22,7 @@ const DressScene = () => {
           enableDamping
           dampingFactor={0.03}
           autoRotate
-          autoRotateSpeed={2}
+          autoRotateSpeed={4}
           minDistance={3}
           maxDistance={10}
         />
