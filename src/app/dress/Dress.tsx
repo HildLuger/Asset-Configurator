@@ -10,7 +10,8 @@ const Dress = () => {
   return (
     <primitive 
       object={scene} 
-      position={[0, 0, 0]} 
+      scale={[3,3,3]}
+      position={[0, -2.5, 0]} 
       rotation={[0, rotationY, 0]} 
     />
   );

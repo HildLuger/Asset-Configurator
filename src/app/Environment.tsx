@@ -20,7 +20,7 @@ const MyEnvironment = () => {
         background blur={0.9} 
       />
       <directionalLight position={ [ 1, 2, 3 ] } intensity={isDarkMode ? 1 : 0} />
-      <directionalLight position={ [ -1, 2, -3 ] } intensity={isDarkMode ? 0 : 0} />
+      <directionalLight position={ [ -1, 2, -3 ] } intensity={isDarkMode ? 0.5 : 0} />
     </>
   );
 };

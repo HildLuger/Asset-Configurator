@@ -6,6 +6,7 @@ import { useGLTF, OrbitControls, Environment } from '@react-three/drei';
 import MyEnvironment from '../Environment';
 import store from '../store';
 import Ring from './Ring';
+import MessageOverlay from '../message';
 
 const DressScene = () => {
   const controlsRef = useRef(null);
@@ -28,6 +29,7 @@ const DressScene = () => {
         <Ring/>
          <MyEnvironment />
       </Canvas>
+      <MessageOverlay/>
     </main>
   );
 };

@@ -10,8 +10,9 @@ const Ring = () => {
   return (
     <primitive 
       object={scene} 
+      scale={[0.3,0.3,0.3]}
       position={[0, 0, 0]} 
-      rotation={[0, rotationY, 0]} 
+      rotation={[45, rotationY, 0]} 
     />
   );
 };
