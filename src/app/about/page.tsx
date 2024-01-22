@@ -11,7 +11,7 @@ export default function About() {
          Welcome.
         </h1>
         <p className=" text-center text-base bg-custom-blue dark:bg-custom-purple text-gray-600 dark:text-white leading-relaxed mb-2 p-3">
-           I&apos;m Hild Luger, a Front-End Web Developer. <br /> I built this Tarot game using Next.js 14, Typescript, React Three Fiber, Redux ToolKit and Tailwind CSS. <br />
+           I&apos;m Hild Luger, a Front-End Web Developer. <br /> I built this Asset Configurator using Next.js 14, Typescript, React Three Fiber, Redux ToolKit and Tailwind CSS. <br />
            Feel free to contact me for future projects.
         </p>
         
